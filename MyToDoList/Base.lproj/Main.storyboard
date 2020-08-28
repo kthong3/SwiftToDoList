@@ -104,13 +104,45 @@
         <!--View View Controller-->
         <scene sceneID="Ruu-x1-qqG">
             <objects>
-                <viewController id="KQy-kF-y62" customClass="ViewViewController" customModule="MyToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view" id="KQy-kF-y62" customClass="ViewViewController" customModule="MyToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPI-Bm-pgt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psm-y6-dkE">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="5JM-WN-hld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGw-e6-ehi">
+                                <rect key="frame" x="20" y="144" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ioJ-jX-0EK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oGw-e6-ehi" firstAttribute="leading" secondItem="tta-Z4-dG2" secondAttribute="leading" constant="20" id="21J-Dc-9Xc"/>
+                            <constraint firstItem="tta-Z4-dG2" firstAttribute="trailing" secondItem="psm-y6-dkE" secondAttribute="trailing" constant="20" id="4mQ-Vs-DMd"/>
+                            <constraint firstItem="oGw-e6-ehi" firstAttribute="top" secondItem="psm-y6-dkE" secondAttribute="bottom" constant="10" id="b2f-dp-JVc"/>
+                            <constraint firstItem="tta-Z4-dG2" firstAttribute="trailing" secondItem="oGw-e6-ehi" secondAttribute="trailing" constant="20" id="fIv-49-2dd"/>
+                            <constraint firstItem="psm-y6-dkE" firstAttribute="top" secondItem="tta-Z4-dG2" secondAttribute="top" constant="20" id="iSc-gG-vNO"/>
+                            <constraint firstItem="psm-y6-dkE" firstAttribute="leading" secondItem="tta-Z4-dG2" secondAttribute="leading" constant="20" id="soe-Cw-Jq1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tta-Z4-dG2"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="oGw-e6-ehi" id="JYg-bO-rP1"/>
+                        <outlet property="itemLabel" destination="psm-y6-dkE" id="5XB-fe-t48"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gn-xe-qLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

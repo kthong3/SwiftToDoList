@@ -25,10 +25,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var table: UITableView!
     
     private var data = [ToDoListItem]()
-        
+    private let realm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        data = realm.objects(ToDoListItem.self).map({$0})
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         table.delegate = self
         table.dataSource = self
@@ -50,6 +51,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         
         // Open the screen to see item info and delete
+    }
+    
+    @IBAction func didTapAddButton() {
+        guard let vc = storyboard?.instantiateViewController(identifier: "enter") as? EntryViewController else {
+            return
+        }
+        vc.completionHandler = { [weak self] in
+            self?.refresh()
+        }
+        vc.title = "New Item"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func refresh(){
+        data = realm.objects(ToDoListItem.self).map({$0})
+        table.reloadData()
     }
 
 }

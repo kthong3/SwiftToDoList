@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		46431AB724F93D8300D88C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46431AB524F93D8300D88C39 /* LaunchScreen.storyboard */; };
 		46431AC224F93D8300D88C39 /* MyToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46431AC124F93D8300D88C39 /* MyToDoListTests.swift */; };
 		46431ACD24F93D8300D88C39 /* MyToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46431ACC24F93D8300D88C39 /* MyToDoListUITests.swift */; };
+		46431ADB24F949AD00D88C39 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46431ADA24F949AD00D88C39 /* EntryViewController.swift */; };
+		46431ADD24F949C300D88C39 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46431ADC24F949C300D88C39 /* ViewViewController.swift */; };
 		63F304884FA6F82F192B6D48 /* Pods_MyToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40D62B29CEF51C7A39CF58D /* Pods_MyToDoList.framework */; };
 		E9309D32DA08E5E9EA6F9085 /* Pods_MyToDoListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19138CF7B2DC83A9A206E7E2 /* Pods_MyToDoListTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		46431AC824F93D8300D88C39 /* MyToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46431ACC24F93D8300D88C39 /* MyToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDoListUITests.swift; sourceTree = "<group>"; };
 		46431ACE24F93D8300D88C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46431ADA24F949AD00D88C39 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		46431ADC24F949C300D88C39 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 		837F1FBBFEC27307F01B9970 /* Pods-MyToDoListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoListTests.release.xcconfig"; path = "Target Support Files/Pods-MyToDoListTests/Pods-MyToDoListTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B9353D2A90D8065196A2BED /* Pods_MyToDoList_MyToDoListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToDoList_MyToDoListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C88DF5B1AAD91F79B60E9F4 /* Pods-MyToDoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoListTests.debug.xcconfig"; path = "Target Support Files/Pods-MyToDoListTests/Pods-MyToDoListTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				46431AB324F93D8300D88C39 /* Assets.xcassets */,
 				46431AB524F93D8300D88C39 /* LaunchScreen.storyboard */,
 				46431AB824F93D8300D88C39 /* Info.plist */,
+				46431ADA24F949AD00D88C39 /* EntryViewController.swift */,
+				46431ADC24F949C300D88C39 /* ViewViewController.swift */,
 			);
 			path = MyToDoList;
 			sourceTree = "<group>";
@@ -165,7 +171,6 @@
 				9C88DF5B1AAD91F79B60E9F4 /* Pods-MyToDoListTests.debug.xcconfig */,
 				837F1FBBFEC27307F01B9970 /* Pods-MyToDoListTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -409,6 +414,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46431AAF24F93D7F00D88C39 /* ViewController.swift in Sources */,
+				46431ADB24F949AD00D88C39 /* EntryViewController.swift in Sources */,
+				46431ADD24F949C300D88C39 /* ViewViewController.swift in Sources */,
 				46431AAB24F93D7F00D88C39 /* AppDelegate.swift in Sources */,
 				46431AAD24F93D7F00D88C39 /* SceneDelegate.swift in Sources */,
 			);
